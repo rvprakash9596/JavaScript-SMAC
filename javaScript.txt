@@ -143,12 +143,13 @@ Ex: name:Ravi
     rollNo:2204220109027
 
 
-================================================================================================
-                                    Chapter - 2
-================================================================================================
+========================================================================================================================
+                                                        Chapter - 2
+========================================================================================================================
 
 Comments in JS
---------------
+==============
+. Comments are used to describe about a code that what will that perticular code do. 
 . Parts of the code which is not executed.
 . Comments are two types.
 
@@ -158,4 +159,44 @@ Comments in JS
 //This is a single line comments in JS
 /* This is multiline comments in JS */
 
+
+                                                Operators in JS :
+=======================================================================================================================
+
+Used to perform some operation on Data.
+
+1.Arithmetic Operators
+
++,-,*,/
+.Modulus
+.Exponentiation
+.Increment
+.Decrement
+
+Ex. a+b
+
+a,b are operands.
++ is a operator.
+
+// Arithmetic Operators
+let a=5;
+let b=2;
+console.log("a =",a,"\nb =",b);
+// console.log(a+b);
+console.log(" a + b = ",a+b);
+console.log(" a - b = ",a-b);
+console.log(" a * b = ",a*b);
+console.log(" a / b = ",a/b);
+console.log(" a % b = ",a%b);
+console.log(" a ** b = ",a**b);//Exponentiation
+
+Unary Operator : works on single operands.
+---------------
+console.log(++a);//pre-increment operator
+console.log(a++);//post-increment operator
+console.log(a);
+
+console.log(a--); //post-decrement
+console.log(--a); //pre-decrement
+console.log(a);
 
