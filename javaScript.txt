@@ -143,3 +143,19 @@ Ex: name:Ravi
     rollNo:2204220109027
 
 
+================================================================================================
+                                    Chapter - 2
+================================================================================================
+
+Comments in JS
+--------------
+. Parts of the code which is not executed.
+. Comments are two types.
+
+1.Single Line Comments
+2.Multi-Line Comments
+
+//This is a single line comments in JS
+/* This is multiline comments in JS */
+
+
