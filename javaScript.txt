@@ -160,7 +160,7 @@ Comments in JS
 /* This is multiline comments in JS */
 
 
-                                                Operators in JS :
+                                    Operators and Conditional Statements in JS :
 =======================================================================================================================
 
 Used to perform some operation on Data.
@@ -200,3 +200,216 @@ console.log(a--); //post-decrement
 console.log(--a); //pre-decrement
 console.log(a);
 
+Assignment Operator :
+---------------------
+=   +=   -=   *=   %=   **=
+
+Ex.
+a+=1 ==> a=a+1
+a+=4 ==> a+4
+
+
+let a=5;
+let b=2;
+// a+=4;
+// a*=4;
+// a/=4;
+// a%=4;
+a**=4;
+console.log(a);
+
+
+Comparison Operator :
+---------------------
+Equal to ==
+Equal to & type ===
+Not Equal to !=
+Not Equal to & type !==
+Less That <
+Greater Than >
+Less that equal to <=
+ Greate Than Equal to >=
+
+
+ let a=5;
+let b=2;
+// console.log(a==b); // false
+// console.log(a!=b); // true
+// console.log(a<b); // false
+// console.log(a>b); // true
+// console.log(a>=b);//true
+// console.log(a<=b);//false
+
+
+// let b=10;
+// let c="10";
+// console.log(b==c);//true
+
+let d=5;;
+let e="5";
+console.log(d==e);//true
+console.log(d===e);//false
+console.log(d!==e);//true
+
+
+Logical operators :
+-------------------
+Logical AND   &&
+Logical OR    ||
+Logical NOT   !
+
+Conditional Statement :
+-----------------------
+. To implement some condition in the code.
+1. if Statement
+2. if-else Statement
+3. else-if Statement
+
+if Statement
+------------
+if(condition)
+{
+    //statements
+}
+
+if-else Statement
+-----------------
+if(condition)
+{
+    //statements
+}
+else{
+    //condition
+}
+
+else-if Statement
+-----------------
+Syntax:
+------
+if(condition)
+{
+    // code
+}
+else if(condition)
+{
+    // code
+}
+else if(condition)
+{
+    // code
+}
+else{
+    // code
+}
+
+Example:
+---------
+let mode="blue";
+let color;
+
+if(mode==="dark")
+{
+    color="black";
+}
+else if(mode==="blue")
+{
+    color="red";
+}
+else if(mode==="pink")
+{
+    color="green";
+}
+else{
+    color="white";
+}
+console.log(color);
+
+
+
+Ternary Operator: It is a way to write if else statement in single line. 
+-----------------
+condition ? true output : false output
+age>18 ? "adult" : "not adult" ;
+
+Example:
+let age=25;
+let res= age>18? "You are eligible for Vote" : "You are not eligible for Vote";
+console.log(res);
+
+
+MDN Docs
+---------
+
+switch Statement
+----------------
+
+let fruit="Grapes";
+switch(fruit)
+{
+    case "Papaya":
+        console.log("This is a papaya");
+        break;
+    case "Mango":
+        console.log("This is a Mango");
+        break;
+    default:
+        console.log(`Sorry! , we don't have found your ${fruit}.`);
+}
+
+
+// let's Practice
+==================================================================
+
+// alert("Hello Bhai "); // Creates one time pop-up
+
+/*let name=prompt("Hello");
+console.log(name);*/
+// prompt("kaise ho"); // Takes input
+
+/*Q1. Get user to input a number using prompt("Enter a number : "). Check if the number is a multiple of 5 or not.
+let num=prompt("Enter a number : ");
+if(num%5===0)
+{
+    console.log(num ," is Multiple of 5");
+}
+else
+{
+    console.log(num ,"is not multiple of 5");
+}
+*/
+
+
+/*Q2. Write a code which can give grade to students according to their scores.
+90-100 A
+70-89 B
+60-69 C 
+50-59 D 
+0-49 F*/
+
+let score=prompt("Enter your score : ");
+// let score=95;
+let grade;
+if(score>=90 && score<=100)
+{
+    grade="A";
+}
+else if(score>=70 && score<=89)
+{
+    grade="B"
+}
+else if(score>=60 && score<=69)
+{
+    grade="C";
+}
+else if(score>=50 && score<=59)
+{
+    grade="D";
+}
+else if(score>=0 && score<=49)
+{
+    grade="F";
+}
+// else{
+//     grade="F"
+// }
+console.log("According to your scores , Your grade is : ",grade);
