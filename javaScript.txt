@@ -755,3 +755,9 @@ Let's Practice :
 Q1. Prompt the user to enter their full name. Generate a username for them based on the input . Starts username with @, followed by their full name and ending with the full name length.
 
 eg. user name="raviprakash",username should be "@raviprakash11"
+
+Example:
+---------
+let fullname=prompt("Enter Your Full Name Without Space :");
+let username="@"+fullname+fullname.length;
+console.log(username);
