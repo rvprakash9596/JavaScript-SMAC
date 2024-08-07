@@ -177,7 +177,9 @@ console.log("Congratulations! , you entered the right number ...");
 //                                           Strings in JavaScript
 //                                          =======================
 
+// Strings are immutable in JavaScript
 
+/*
 let str1="Ravi Prakash";
 let str2="Saurabh";
 console.log(str1);
@@ -191,3 +193,80 @@ console.log(str1[0]);
 console.log(str1[1]);
 console.log(str1[2]);
 console.log(str1[3]);
+*/
+
+/*
+let obj={
+    item:"Pen",
+    price:10
+};
+console.log("The price of ",obj.item,"is",obj.price,"Rs.");
+
+//              OR  using template literals
+
+let output = `The cost of ${obj.item} is ${obj.price} Rupees`;
+console.log(output);
+*/
+
+// Template Literals
+/*
+let sentence=`This is a template Literals`;
+console.log(sentence);
+console.log(typeof(sentence));
+*/
+
+// Escape Characters:
+/*
+let s="Ravi Prakash";
+console.log(s.length);
+console.log("Ravi\nPrakash");
+console.log("Ravi\tPrakash");
+*/
+
+//String Methhods in JavaScript :
+//-------------------------------
+/*
+There are built-in functions to manipulate a string.
+
+.str.toUpperCase()
+.str.toLoverCase()
+.str.trim() // removes whitespace
+.str.slice(start,end?)//returns part of string
+.str1.concat(str2) //joins str2 with str1
+.str.replace(searchVal,newVal)
+.str.charAt(idx)
+*/
+
+/*
+let str="ravi prakash bansal iet lko";
+
+console.log(str.toUpperCase());
+
+console.log(str.toLowerCase());
+
+console.log(str);
+
+console.log(str.trim()); // removes whitespaces from begining and last
+
+let str1 = "Ravi Prakash";
+console.log(str1.slice(2,7));
+
+let str2="Saurabh Kumar";
+console.log(str2.concat(str1));
+
+console.log(str1.replace("Ravi","Sonu"));
+
+console.log(str1.charAt(5));
+*/
+
+
+//Let's Practice :
+//===============================
+/*
+Q1. Prompt the user to enter their full name. Generate a username for them based on the input . Starts username with @, followed by their full name and ending with the full name length.
+
+eg. user name="raviprakash",username should be "@raviprakash11"
+*/
+let fullname=prompt("Enter Your Full Name Without Space :");
+let username="@"+fullname+fullname.length;
+console.log(username);
